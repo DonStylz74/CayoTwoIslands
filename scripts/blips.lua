@@ -29,6 +29,9 @@ local blips = {
 	{title="Island House", colour=7, id=40, x=5080.4, y=-5756.1, z=21.62},
 	{title="Island House", colour=7, id=40, x=5026.97, y=-5735.91, z=17.87},
 
+	-- Island Jail --
+	{title="Alkatraz Island", colour=30, id=40, x=-3564.3545, y=-3969.2998, z=57.5198},
+	
 }
 
 Citizen.CreateThread(function()
