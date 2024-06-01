@@ -4,7 +4,7 @@ local blips = {
 	-- Airports --
 
 	{title="Sandy Shores Airport", colour=3, id=90, x= 1072.73, y= 3052.01, z= 40.59},
-	{title="LS Airport", colour=3, id=90, x=-918.23, y=-3285.26, z=13.36},
+	{title="LS Airport", colour=3, id=90, x=-1235.6198, y=-2344.2046, z=14.0925},   -- orig-x=-918.23, y=-3285.26, z=13.36
 	{title="Cayo Perico Runway", colour=3, id=90, x=3961.97, y=-4689.05, z=3.6},
 
 
