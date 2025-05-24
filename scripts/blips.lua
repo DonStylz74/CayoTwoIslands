@@ -2,10 +2,12 @@
 local blips = {
 
 	-- Airports --
-
-	{title="Sandy Shores Airport", colour=3, id=90, x= 1072.73, y= 3052.01, z= 40.59},
-	{title="LS Airport", colour=3, id=90, x=-1045.7395, y=-2751.3999, z=21.3634},   -- orig-x=-918.23, y=-3285.26, z=13.36
-	{title="Cayo Perico Runway", colour=3, id=90, x=3961.97, y=-4689.05, z=3.6},
+	{title="Airport", colour=3, id=90, x=-1045.7395, y=-2751.3999, z=21.3634, did=4, scale=0.5},  --  LSIA
+	{title="Airport", colour=3, id=90, x=-2279.8914, y=3159.7019, z=21.3634, did=4, scale=0.5},  --  Zancudo
+	{title="Airport", colour=3, id=90, x= 1072.73, y= 3052.01, z= 21.3634, did=4, scale=0.5},  --  Sandy
+	{title="Airport", colour=3, id=90, x=2118.2241, y=4803.0083, z=21.3634, did=4, scale=0.5},  --  Grapeseed
+	{title="Airport", colour=3, id=90, x=-354.1873, y=6448.7852, z=21.3634, did=4, scale=0.5},  --  Paleto Bay
+	{title="Airport", colour=3, id=90, x=4454.0234, y=-4509.1128, z=21.3634, did=4, scale=0.5},  --  Cayo island
 
 
 	-- Cayo Perico Island Blips --
@@ -30,7 +32,7 @@ local blips = {
 	--{title="Island House", colour=7, id=40, x=5026.97, y=-5735.91, z=17.87},
 
 	-- Island Jail --
-	{title="Alkatraz Island", colour=30, id=542, x=-3564.3545, y=-3969.2998, z=57.5198},
+	{title="Alkatraz Island", colour=30, id=542, x=-3564.3545, y=-3969.2998, z=57.5198, did=5, scale=0.5},
 	
 }
 
@@ -39,7 +41,7 @@ Citizen.CreateThread(function()
 	for _, info in pairs(blips) do
 		info.blip = AddBlipForCoord(info.x, info.y, info.z)
 		SetBlipSprite(info.blip, info.id)
-		SetBlipDisplay(info.blip, 4)
+		SetBlipDisplay(info.blip, info.did)
 		SetBlipScale(info.blip, 0.5)
 		SetBlipColour(info.blip, info.colour)
 		SetBlipAsShortRange(info.blip, true)
